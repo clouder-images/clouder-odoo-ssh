@@ -5,4 +5,4 @@ RUN touch /tmp/odoo-ssh
 RUN apt-get -qq update && DEBIAN_FRONTEND=noninteractive apt-get -y -qq install openssh-server
 USER root
 
-CMD CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/usr/sbin/sshd", "-D"]
